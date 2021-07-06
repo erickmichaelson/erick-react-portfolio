@@ -1,1 +1,2 @@
-# erick-react-portfolio
+# Erick Michaelson's Portfolio
+## Built with React

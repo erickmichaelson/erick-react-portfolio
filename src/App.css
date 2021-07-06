@@ -1,0 +1,188 @@
+/* This segment affects the entire page and it sets up border boxes so I can size them */
+*   {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* This header is set to go across the whole top of the page*/
+header{
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 32px; 
+  background-color: lightcoral;
+  color: ivory;
+  font-family:Garamond sans-serif 'Times New Roman', Times, serif;
+  font-weight: lighter;
+      
+}
+/* This lays out the background image for the body layout */
+body{
+  background-color: lavenderblush;
+  /* background-image: url(gemini.png); */
+  background-blend-mode:soft-light;
+  background-attachment:fixed;
+  background-size: cover;
+  background-position: inherit;
+
+}
+/* These are the navigation links to get to the rest of the page easily */
+.nav-links a {
+  color: white;
+  font-family: Garamond;
+  background-color: lightcoral;
+  font-weight: bolder;
+  font-size: larger;
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
+ul{
+  list-style: none;
+}
+
+a.about-me {
+  
+  background-color: lightcoral;
+  padding: 15px;
+  position: absolute;
+  right: 60px;
+  top: 200px;
+  border-radius: 15%;
+}
+a.recent-work {
+  
+  background-color: lightcoral;
+  padding: 15px;
+  position: absolute;
+  right: 25px;
+  top: 300px;
+ border-radius: 15%;
+}
+a.contact-me {
+  background-color: lightcoral;
+  padding: 15px;
+  padding-left: 22px;
+  position: absolute;
+  right: 30px;
+  top: 400px;
+  border-radius: 15%;
+}
+a.contact-me:hover {
+  background-color: lightpink;
+  transition: background-color .5s;
+ 
+}
+a.about-me:hover {
+  background-color: lightpink;
+  transition: background-color .5s;
+
+}
+a.recent-work:hover {
+  background-color: lightpink;
+  transition: background-color .5s;
+}
+
+.self-image img {
+  top: 30px;
+  height: 250px;
+  width:250px;
+ /* This is what makes the image a circle */
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  position: relative;
+  float: left;
+  left: 5%; 
+}
+
+div.break {
+  right: 0;
+  left: 0;
+  height: 500px;
+}
+
+div.recent-work{
+
+  padding: 100px;
+
+  background-color: lightcoral;
+ position: relative;
+  color: lightcyan;
+  
+}
+/* These are styling for the filler images that I will eventually use to link recent-works */
+/* I tried to make them dynamic but it didn't work as planned. Will come back to this. */
+.recent-work-image img {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  float:inline-start;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.recent-work-image-2 img {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  float:inline-end;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+
+}
+
+/* This is the text for the about me section I have it aligned to the left. */
+div.about-me{
+  color: lightcoral;
+  padding: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  font-family:Garamond sans-serif 'Times New Roman', Times, serif;
+
+}
+/* This makes the regular text for the contact info white and formated */
+aside.contact-info{
+  color: lightcyan;
+  padding: 150px;
+  background-color: lightcoral;
+  text-decoration: none;
+  position: relative;
+  font-family:Garamond sans-serif 'Times New Roman', Times, serif;
+}
+/* This makes the hyperlink texts not just blue and underscored */
+a.contact-links{
+  font-size: larger;
+  text-decoration: none;
+  color: lightpink;
+  size: 15px;
+  font-family:Garamond sans-serif 'Times New Roman', Times, serif;
+
+}
+/* I tried to make some media queries. I couldn't get all the way figured out what I wanted to do to make the nav links go under the picture */
+@media only screen and (max-width:950px) {
+  body {
+      flex-wrap: wrap;
+  }
+  div.about-me{
+      padding: 10px 10px 10px;
+  }
+     div.about-content {
+         padding: 200px;
+         padding-left: 15px;
+         padding-right: 15px;
+     } 
+  
+  .nav-links{
+      flex-direction: column;
+  }
+}
+
+
