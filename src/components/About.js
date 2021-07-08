@@ -6,7 +6,7 @@ function About() {
                 <p className="about-content">My name is Erick Michaelson</p>
                 <p> I am twenty-six year old web developer from Detroit, Michigan. </p>
                 <p> I have a longstanding interest in computers and now coding and web development. </p>
-                <p>Especially intersted in using Web applications for teaching and accessible education. </p>
+                <p>Especially interested in using Web applications for teaching and accessible education. </p>
     
     </div>
             )
