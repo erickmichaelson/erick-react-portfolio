@@ -2,7 +2,7 @@
 
 function Contact(){
     return(
-        <div id="contact-me" className="contact-info">
+        <div id="contact-me" className="contact-info fullpage">
         <h2>Contact Info</h2>
         
         <ul>

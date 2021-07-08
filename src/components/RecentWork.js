@@ -1,6 +1,6 @@
 function RecentWork() {
     return (
-        <div>placeholder</div>
+        <div className="fullpage" >placeholder</div>
     )
 }
 
